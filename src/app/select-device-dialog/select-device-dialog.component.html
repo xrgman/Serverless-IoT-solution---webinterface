@@ -1,0 +1,18 @@
+<div style="width: 600px">
+  <h2 mat-dialog-title>Select a device to register it's name</h2>
+  <hr>
+
+
+  <mat-dialog-content>
+    <mat-nav-list>
+      <mat-list-item *ngFor="let room of rooms">
+        <a matLine (click)="onSelectRoom(room.id)">
+          <h3>
+            {{room.hostname}}
+          </h3>
+        </a>
+      </mat-list-item>
+    </mat-nav-list>
+  </mat-dialog-content>
+
+</div>

@@ -1,0 +1,11 @@
+#saveNameButton {
+  float: right;
+}
+
+mat-dialog-actions {
+  display: block;
+}
+
+mat-form-field {
+  width: 30em;
+}

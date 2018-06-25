@@ -1,0 +1,17 @@
+<mat-nav-list>
+  <mat-list-item *ngFor="let room of rooms">
+    <a matLine routerLink="/room/{{room.id}}">
+      <div *ngIf="room.ismanager == 1; then managerIcon else nodeIcon"></div>
+      <ng-template #managerIcon><mat-icon class="roomIcon">router</mat-icon></ng-template>
+      <ng-template #nodeIcon><mat-icon class="roomIcon">developer_board</mat-icon></ng-template>
+      <h2 style="float: left; display: block;">
+
+        {{room.name}}
+      </h2>
+    </a>
+  </mat-list-item>
+</mat-nav-list>
+
+
+<button mat-raised-button color="primary" id="registerDeviceButton" (click)="openSelectDeviceDialog()">Register new device</button>
+

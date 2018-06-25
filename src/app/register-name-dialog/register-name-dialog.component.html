@@ -1,0 +1,10 @@
+<div style="width: 600px">
+  <h2 mat-dialog-title>{{room.hostname}}</h2>
+  <hr>
+  <mat-dialog-content>
+    <mat-form-field><input #roomNameInput placeholder="Room name" matInput></mat-form-field>
+  </mat-dialog-content>
+  <mat-dialog-actions>
+    <button mat-raised-button color="primary" id="saveNameButton" (click)="onSaveButton(roomNameInput.value)">Save</button>
+  </mat-dialog-actions>
+</div>

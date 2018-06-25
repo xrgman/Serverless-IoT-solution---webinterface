@@ -1,0 +1,24 @@
+#currentData {
+
+}
+
+
+#currentData div {
+  width: 350px;
+  height: 100px;
+  border: 1px solid black;
+
+  float: left;
+  text-align: center;
+
+  margin: 5px;
+}
+
+#currentData h1 {
+  vertical-align: center;
+}
+
+#currentData p {
+  font-size: 18px;
+  margin-top: 4px;
+}

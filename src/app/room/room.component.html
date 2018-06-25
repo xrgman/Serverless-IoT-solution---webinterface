@@ -1,0 +1,31 @@
+<div *ngIf="room">
+  <h1>{{room.name}}</h1>
+
+  <div id="currentData" *ngIf="currentData">
+    <div>
+      <p>Temperature</p>
+      <h1>{{currentData.temperature | number : '1.2-2'}} °C</h1>
+    </div>
+    <div>
+      <p>Humidity</p>
+      <h1>{{currentData.humidity | number : '1.2-2'}}%</h1>
+    </div>
+    <div>
+      <p>PM2.5</p>
+      <h1>{{currentData.fineDust25}} ppm</h1>
+    </div>
+    <div>
+      <p>PM10</p>
+      <h1>{{currentData.fineDust10}} ppm</h1>
+    </div>
+    <div>
+      <p>Carbon monoxide</p>
+      <h1>{{currentData.carbonMonoxide | number : '1.2-2'}} ppm</h1>
+    </div>
+    <div>
+      <p>Nitrogen dioxide</p>
+      <h1>{{currentData.nitrogenOxide | number : '1.2-2'}} ppm</h1>
+    </div>
+  </div>
+</div>
+
